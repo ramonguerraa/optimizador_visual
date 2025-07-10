@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Entornos virtuales
+.venv/
+env/
+
+# VS Code
+.vscode/
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Datos
+data/resultados/
+*.xlsx~
+*.csv~
