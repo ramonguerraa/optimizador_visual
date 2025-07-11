@@ -1,0 +1,2 @@
+timestamp,tipo,estado,valor_objetivo,entrada_modelo,entrada_restricciones,entrada_costos,solucion
+2025-07-10 23:42:39,Maximización,Optimal,500.0,"{""Variable"":{""0"":""X1"",""1"":""X2""},""Coef_FO"":{""0"":7,""1"":5},""Coef_R1"":{""0"":4,""1"":2},""Coef_R2"":{""0"":3,""1"":1}}","{""Restriccion"":{""0"":""R1"",""1"":""R2""},""Tipo"":{""0"":""<="",""1"":""<=""},""RHS"":{""0"":240,""1"":100}}",,"{""X1"":0.0,""X2"":100.0}"

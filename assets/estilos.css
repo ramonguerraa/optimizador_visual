@@ -1,0 +1,31 @@
+/* Cambiar fondo general */
+body {
+    background-color: #f9f9f9;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: #202020;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Contenedor de resultados */
+div.stDataFrame {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+/* Botones */
+button[kind="primary"] {
+    background-color: #006699;
+    color: white;
+    border-radius: 6px;
+}
+
+/* Subrayar titulos secundarios */
+h2 {
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 4px;
+}

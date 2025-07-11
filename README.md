@@ -1,90 +1,68 @@
-# Optimizador Visual de Recursos
+# 🧠 Optimizador Visual Interactivo
 
-**Versión inicial del proyecto | En desarrollo 🚧**
+Una aplicación construida con **Python** y **Streamlit** para resolver y visualizar problemas de:
 
----
-
-## 📌 Descripción
-
-Este proyecto es una aplicación interactiva construida con **Python y Streamlit** que permite resolver problemas clásicos de **optimización lineal** de forma visual e intuitiva. Está diseñado para facilitar la carga de datos desde archivos Excel o formularios, ejecutar distintos tipos de modelos de optimización, y visualizar los resultados de manera clara y comprensible.
-
-### Problemas que se pueden resolver:
-
-- ✅ **Maximización** de beneficios o utilidades
-- ✅ **Minimización** de costos o tiempos
-- ✅ **Problemas de transporte** (asignación óptima de rutas, costos logísticos)
-- ✅ **Problemas de asignación** (método húngaro)
+- 🔼 **Maximización**
+- 🔽 **Minimización**
+- 🚚 **Problemas de Transporte**
+- 🧮 **Asignación de Recursos** (Método Húngaro)
 
 ---
 
-## 🧮 Tecnologías utilizadas
+## 🎯 Funcionalidades
 
-- Python 3.10+
-- [Streamlit](https://streamlit.io/) – Interfaz visual
-- [PuLP](https://coin-or.github.io/pulp/) – Optimización lineal
-- Pandas, NumPy – Manejo de datos
-- Matplotlib / Plotly – Visualizaciones
-- OpenPyXL / XlsxWriter – Lectura y escritura de Excel
+- ✅ Carga de datos por archivo Excel o ingreso manual
+- ✅ Visualización gráfica para modelos de 2 variables
+- ✅ Exportación de resultados a Excel (con gráficos)
+- ✅ Registro automático de todas las ejecuciones
+- ✅ Historial navegable y filtrable desde la app
 
 ---
 
-## 🏁 Cómo ejecutar el proyecto
+## 🛠️ Requisitos
 
-1. Clona el repositorio:
-
-```bash
-git clone https://github.com/tu_usuario/optimizador-visual.git
-cd optimizador-visual
-```
-
-2. Crea y activa un entorno virtual:
-
-```bash
-python -m venv .venv
-# Activación:
-# En Windows:
-.venv\Scripts\activate
-# En Mac/Linux:
-source .venv/bin/activate
-```
-
-3. Instala las dependencias:
+Instala los paquetes necesarios con:
 
 ```bash
 pip install -r requirements.txt
 ```
+Requiere Python 3.11 o superior.
 
-4. Ejecuta la aplicación:
+## 🚀 Uso
+Ejecutá la app desde la raíz del proyecto:
 
 ```bash
 streamlit run app.py
 ```
-
-## 📂 Estructura del proyecto
+## 📁 Estructura del proyecto
 
 ```bash
-optimizador-visual/
-│
-├── app.py                   # Punto de entrada de Streamlit
-├── requirements.txt         # Librerías necesarias
-├── README.md
-├── .gitignore
-│
-├── main/                    # Lógica del modelo
-│   ├── modelo.py
-│   ├── visualizacion.py
-│   └── utils.py
-│
-├── data/                    # Datos de entrada y salida
-│   └── resultados/
-│
-├── tests/                   # Pruebas unitarias
-├── assets/                  # Recursos visuales (logos, CSS)
-└── .streamlit/              # Configuración de la app
+optimizador_visual/
+├── app.py
+├── main/
+│   ├── __init__.py
+│   ├── problemas.py
+│   ├── utils.py
+│   ├── interfaz.py
+│   └── visualizacion.py
+├── data/
+│   ├── ejemplo_maximizacion.xlsx
+│   ├── ejemplo_minimizacion.xlsx
+│   ├── ejemplo_transporte.xlsx
+│   └── ejemplo_asignacion.xlsx
+├── logs/
+│   └── registro.csv
+├── requirements.txt
+└── README.md
 ```
-## 📌 Estado actual
-### 🔧 En desarrollo – módulo de maximización listo en versión preliminar.
-### 🚀 Próximamente: módulos de transporte y asignación con visualización dinámica.
+
+## 🧪 Testing
+Usamos pytest para pruebas unitarias. Ejecuta:
+
+```bash
+pytest tests/ --import-mode=importlib
+```
+
 
 ## 📄 Licencia
 Este proyecto es de código abierto y se publica bajo licencia MIT.
